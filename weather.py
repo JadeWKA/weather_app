@@ -4,16 +4,6 @@ import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 
-# class City:
-#     def __init__(self,location,temp,time,sky,other):
-#         self.location = location 
-#         self.temp = temp 
-#         self.time = time 
-#         self.sky = sky
-#         self.other = other
-
-       
-
 st.header('Weather Tracker')
 
 st.write('Enter a City here to check weather')
@@ -49,15 +39,3 @@ st.write("Temperature is", temp)
 st.write("Time: ", time)
 st.write("Sky Description: ", sky)
 st.write('Other Data: ', other_data)
-
-
-# with st.container():
-#     if st.button('Add'):
-#         user_input = st.text_input("", "")
-#         st.write("Temperature is", temp)
-#         st.write("Time: ", time)
-#         st.write("Sky Description: ", sky)
-#         st.write('Other Data: ', other_data)
-#         st.button('Remove')
-#     else:
-#         container = st.container()
